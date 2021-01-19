@@ -1,0 +1,25 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+ #block-underscores-tools-menu {
+   font-size: 24px;
+ }
+
+.paragraph--type--adv-block {
+  margin: 60px 0px;
+}
+.our-advantages_block img {
+  margin: 0 auto;
+}
+.our-advantages_block {
+  text-align: center;
+  margin: 15px 0px 5px;
+  font-size: 44px;
+  font-weight: 700;
+}
+.our-advantages_block:nth-child(3n) {
+  margin: 0px 0px;
+  font-size: 24px;
+  font-weight: 400;
+}

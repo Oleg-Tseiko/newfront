@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the underscores theme.
+
+underscores.settings:
+  type: theme_settings
+  label: 'underscores settings'
