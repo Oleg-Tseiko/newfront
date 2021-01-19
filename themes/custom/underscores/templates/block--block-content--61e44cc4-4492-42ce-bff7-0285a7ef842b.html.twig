@@ -1,0 +1,134 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_field()
+ */
+#}
+{%
+  set classes = [
+  'field',
+  'field--name-' ~ field_name|clean_class,
+  'field--type-' ~ field_type|clean_class,
+  'field--label-' ~ label_display,
+]
+%}
+{%
+  set title_classes = [
+  'field--label',
+  label_display == 'visually_hidden' ? 'sr-only',
+]
+%}
+
+{% if label_hidden %}
+  {% if multiple %}
+    <div{{ attributes.addClass(classes, 'field--items') }}>
+      123
+      {% for item in items %}
+        <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+      {% endfor %}
+      123
+    </div>
+  {% else %}
+    {% for item in items %}
+      123
+      <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
+    {% endfor %}
+  {% endif %}
+{% else %}
+  <div{{ attributes.addClass(classes) }}>
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+    {% if multiple %}
+    <div class="field--items">
+      123
+      {% endif %}
+      {% for item in items %}
+        <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+      {% endfor %}
+      {% if multiple %}
+      123
+    </div>
+    {% endif %}
+    <div class="p-b-35">
+      <div class="how2 how2-cl4 flex-s-c">
+        <h3 class="f1-m-2 cl3 tab01-title">
+          Stay Connected
+        </h3>
+      </div>
+      <ul class="p-t-35">
+        <li class="flex-wr-sb-c p-b-20">
+          <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-facebook fs-16 cl0 hov-cl0">
+            <span class="fab fa-facebook-f"></span>
+          </a>
+          <div class="size-w-3 flex-wr-sb-c">
+<span class="f1-s-8 cl3 p-r-20">
+6879 Fans
+</span>
+            <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
+              Like
+            </a>
+          </div>
+        </li>
+        <li class="flex-wr-sb-c p-b-20">
+          <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-twitter fs-16 cl0 hov-cl0">
+            <span class="fab fa-twitter"></span>
+          </a>
+          <div class="size-w-3 flex-wr-sb-c">
+<span class="f1-s-8 cl3 p-r-20">
+568 Followers
+</span>
+            <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
+              Follow
+            </a>
+          </div>
+        </li>
+        <li class="flex-wr-sb-c p-b-20">
+          <a href="#" class="size-a-8 flex-c-c borad-3 size-a-8 bg-youtube fs-16 cl0 hov-cl0">
+            <span class="fab fa-youtube"></span>
+          </a>
+          <div class="size-w-3 flex-wr-sb-c">
+<span class="f1-s-8 cl3 p-r-20">
+5039 Subscribers
+</span>
+            <a href="#" class="f1-s-9 text-uppercase cl3 hov-cl10 trans-03">
+              Subscribe
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endif %}

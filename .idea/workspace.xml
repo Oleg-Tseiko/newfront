@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6325f20-7e82-4129-9d9b-b7d9094eed28" name="Default Changelist" comment="" />
+    <list default="true" id="c6325f20-7e82-4129-9d9b-b7d9094eed28" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/development.services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sites/development.services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/custom/underscores/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/custom/underscores/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/custom/underscores/templates/paragraphs/field--paragraph--adv-block.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/custom/underscores/templates/paragraphs/field--paragraph--advantage.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/custom/underscores/templates/paragraphs/paragraph--adv-block.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/custom/underscores/templates/paragraphs/paragraph--advantage.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +26,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/modules/contrib/spamaway" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -108,7 +122,7 @@
       <workItem from="1610404123922" duration="3531000" />
       <workItem from="1610441521425" duration="8721000" />
       <workItem from="1610470044309" duration="2760000" />
-      <workItem from="1610970584249" duration="2227000" />
+      <workItem from="1610970584249" duration="9941000" />
     </task>
     <servers />
   </component>

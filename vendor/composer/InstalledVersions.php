@@ -24,12 +24,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '031a305b45dc558c960133d5b17b16637dd36845',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -519,6 +519,15 @@ private static $installed = array (
         0 => '8.9.12',
       ),
     ),
+    'drupal/ds' => 
+    array (
+      'pretty_version' => '3.9.0',
+      'version' => '3.9.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.9',
+    ),
     'drupal/dynamic_page_cache' => 
     array (
       'replaced' => 
@@ -574,6 +583,15 @@ private static $installed = array (
       array (
         0 => '8.9.12',
       ),
+    ),
+    'drupal/fontawesome' => 
+    array (
+      'pretty_version' => '2.17.0',
+      'version' => '2.17.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.17',
     ),
     'drupal/forum' => 
     array (
@@ -654,12 +672,12 @@ private static $installed = array (
     ),
     'drupal/legacy-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '031a305b45dc558c960133d5b17b16637dd36845',
     ),
     'drupal/link' => 
     array (
